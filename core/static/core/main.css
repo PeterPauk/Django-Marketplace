@@ -1,6 +1,8 @@
-body{
-    background-color: #333
+nav {
+  border-bottom: 2px solid rgb(221, 216, 216);
+  display: flex;
 }
-h1{
-    color: white;
+nav ul {
+  display: flex;
+  flex-direction: row;
 }
