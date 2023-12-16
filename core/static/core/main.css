@@ -7,13 +7,15 @@
 
 nav {
   background-color: #333;
-  color: white;
+  color: #FFF;
   display: grid;
   grid-template-columns: 1fr 5fr;
   padding: 1.2rem 1rem;
 }
-nav h3 {
+nav h3 a {
   font-size: 1.5rem;
+  color: #FFF;
+  text-decoration: none;
 }
 nav ul {
   display: flex;
@@ -39,6 +41,12 @@ nav ul li a button {
   border-radius: 5px;
   cursor: pointer;
   border: 1px solid transparent;
+  transition: 0.2s;
+}
+nav ul li a button:hover {
+  border: 1px solid white;
+  background-color: #333;
+  color: white;
 }
 nav ul li a .sign-btn {
   background-color: white;
@@ -46,4 +54,32 @@ nav ul li a .sign-btn {
 nav ul li a .login-btn {
   background-color: rgb(7, 157, 250);
   color: white;
+}
+
+footer {
+  background-color: #333;
+  color: #FFF;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  padding: 2rem;
+}
+footer div h3 {
+  margin: 0 0 1rem;
+}
+footer div p {
+  color: rgb(154, 160, 168);
+}
+footer div ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer div ul li {
+  margin: 0.5rem 0;
+}
+footer div ul a {
+  text-decoration: none;
+  color: rgb(154, 160, 168);
+  font-size: 1rem;
 }

@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 
 *{
@@ -7,17 +8,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 nav{
-    background-color: $black;
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    padding: 1.2rem 1rem;
+    @include text_block ($black, $white, grid, 1fr 5fr, 1.2rem 1rem );
     h3{
-        font-size: 1.5rem;
+        a{
+            font-size: 1.5rem;
+            color: $white;
+            text-decoration: none;
+        }
     }
-
     ul{
         display: flex;
         flex-direction: row;
@@ -39,6 +38,12 @@ nav{
                     border-radius: 5px;
                     cursor: pointer;
                     border: 1px solid transparent;
+                    transition: 0.2s;
+                    &:hover{
+                        border: 1px solid white;
+                        background-color: $black;
+                        color: white;
+                    }
                 }
                 .sign-btn{
                     background-color: white;
@@ -48,6 +53,31 @@ nav{
                     color: white;
                 }
 
+            }
+        }
+    }
+}
+footer{
+    @include text_block($black, $white, grid, 3fr 2fr, 2rem);
+    div{
+        h3{
+            margin: 0 0 1rem;
+        }
+        p{
+            color: $grey_text;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            li{
+                margin: 0.5rem 0;
+            }
+            a{
+                text-decoration: none;
+                color: $grey_text;
+                font-size: 1rem;
             }
         }
     }

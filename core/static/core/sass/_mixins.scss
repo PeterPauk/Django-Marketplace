@@ -1,0 +1,7 @@
+@mixin text_block($bgcolor, $color, $display, $colums, $padding){
+    background-color: $bgcolor;
+    color: $color;
+    display: $display;
+    grid-template-columns: $colums;
+    padding: $padding;
+}
