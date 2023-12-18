@@ -4,5 +4,32 @@
 
 
 {% block content %}
-    <h1>Front Page</h1>
+<h1>Newest Items</h1>
+<div class="items">
+    {% for item in items %}
+        <div class="item-card">
+            <a href="#">
+                <img src="{{item.image.url}}" alt="">
+                <div>
+                    <h2>{{item.name}}</h2>
+                    <p>Price: {{ item.price }} €</p>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+</div>
+
+<h2 class="category-title">Categories</h2>
+<div>
+    <div  class="items">
+        {% for category in categories %}
+        <div class="item-card">
+            <a href="#" class="category-card">
+                <h2>{{category.name}}</h2>
+                <p>{{category.items.count}} items</p>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
 {% endblock %}

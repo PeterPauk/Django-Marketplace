@@ -82,3 +82,45 @@ footer{
         }
     }
 }
+h1{
+    text-align: center;
+    padding: 2rem;
+}
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: $grey_bg;
+    padding: 2rem;
+    margin: 0 1rem;
+    border-radius: 15px;
+    .item-card{
+        
+        display: flex;
+        justify-content: center;
+        div{
+            padding: 0 1rem 0.5rem ;
+        }
+        a{
+            border-radius: 15px;
+            color: $white;
+            text-decoration: none;
+            width: 27rem;
+            background-color: $black;
+        }
+        img{
+            border-radius: 15px;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            width: 100%;
+            height: 20rem;
+            object-fit: cover;
+        }
+    }
+}
+.category-card, .category-title{
+    padding: 1.5rem;
+}
+.category-title{
+    text-align: center;
+    font-size: 1.8rem;
+}

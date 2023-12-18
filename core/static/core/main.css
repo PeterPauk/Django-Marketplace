@@ -83,3 +83,49 @@ footer div ul a {
   color: rgb(154, 160, 168);
   font-size: 1rem;
 }
+
+h1 {
+  text-align: center;
+  padding: 2rem;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgb(227, 230, 232);
+  padding: 2rem;
+  margin: 0 1rem;
+  border-radius: 15px;
+}
+.items .item-card {
+  display: flex;
+  justify-content: center;
+}
+.items .item-card div {
+  padding: 0 1rem 0.5rem;
+}
+.items .item-card a {
+  border-radius: 15px;
+  color: #FFF;
+  text-decoration: none;
+  width: 27rem;
+  background-color: #333;
+}
+.items .item-card img {
+  border-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  width: 100%;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.category-card, .category-title {
+  padding: 1.5rem;
+}
+
+.category-title {
+  text-align: center;
+  font-size: 1.8rem;
+}
