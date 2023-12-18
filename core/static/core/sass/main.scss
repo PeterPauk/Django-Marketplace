@@ -124,3 +124,43 @@ h1{
     text-align: center;
     font-size: 1.8rem;
 }
+.item-detail{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    .detail-img{
+        display: flex;
+        justify-content: center;
+        img {
+            width: 30rem;
+            height: 30rem;
+          }
+    }
+    .item-info{ 
+        background-color: $grey_bg;
+        border-radius: 20px;
+        margin: 2rem 5rem 2rem 0;
+        h1{
+            text-align: start;
+        }
+        p{
+            font-size: 1.1rem;
+            margin: 0 2rem 0.5rem;
+        }
+        a{
+            background-color: $light_blue;
+            color: $white;
+            text-decoration: none;
+            padding: 0.4rem 1rem;
+            border-radius: 15px;
+            margin: 0 2rem;
+            font-size: 1.3rem;
+            position: relative;
+            top: 1.5rem;
+            &:hover{
+                background-color: $black;
+                color: white;
+            }
+            
+        }
+    }
+}
