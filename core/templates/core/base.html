@@ -12,11 +12,11 @@
 </head>
 <body>
 <nav>
-    <h3><a href="{% url 'index'%}">MarketPlace</a></h3>
+    <h3><a href="{% url 'core:index'%}">MarketPlace</a></h3>
     <ul>
         <li><a href="#">New Item</a></li>
         <li><a href="#">Browse</a></li>
-        <li><a href="#"><button class="sign-btn">Sign Up</button></a></li>
+        <li><a href="{% url 'core:signup' %}"><button class="sign-btn">Sign Up</button></a></li>
         <li><a href="#"><button class="login-btn">Login</button></a></li>
     </ul>
 </nav>
@@ -31,7 +31,7 @@
         <h3>Menu</h3>
         <ul>
             <li><a href="#">About</a></li>
-            <li><a href="{% url 'contact'%}">Contact</a></li>
+            <li><a href="{% url 'core:contact'%}">Contact</a></li>
             <li><a href="#">Privacy policy</a></li>
             <li><a href="#">Terms of service</a></li>
         </ul>

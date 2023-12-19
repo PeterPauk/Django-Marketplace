@@ -5,3 +5,16 @@
     grid-template-columns: $colums;
     padding: $padding;
 }
+@mixin button($fontsize, $padding, $width, $radius, $cursor, $border, $transition){
+    font-size: $fontsize;
+    padding: $padding;
+    width: $width;
+    border-radius: $radius;
+    cursor: $cursor;
+    border: $border;
+    transition: $transition;
+}
+
+
+
+

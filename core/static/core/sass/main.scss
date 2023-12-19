@@ -31,14 +31,7 @@ nav{
                 color: white;
                 font-size: 1.2rem;
                 button{
-                    font-size: 1.2rem;
-                    padding: 0 1rem;
-                    height: 2rem;
-                    width: 7rem;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    border: 1px solid transparent;
-                    transition: 0.2s;
+                    @include button(1.2rem, 0 1rem, 7rem, 5px, pointer, 1px solid transparent, 0.2s);
                     &:hover{
                         border: 1px solid white;
                         background-color: $black;
@@ -160,7 +153,32 @@ h1{
                 background-color: $black;
                 color: white;
             }
-            
+        }
+    }
+}
+.form-div{
+    width: 20rem;
+    margin: -1rem auto 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    input{
+        height: 2.2rem;
+        padding: 0 0 0 0.4rem;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+    button{
+        @include button (1.5rem, 0 1rem, 50%, 5px, pointer, 1px solid transparent, 0.2s);
+        color: white;
+        margin: 0 auto;
+        background-color: $black;
+        &:hover{
+            border: 1px solid white;
+            background-color: $light_blue;
+            color: white;
         }
     }
 }
