@@ -159,7 +159,6 @@ h1 {
   margin: 0 2rem 0.5rem;
 }
 .item-detail .item-info a {
-  background-color: rgb(7, 157, 250);
   color: #FFF;
   text-decoration: none;
   padding: 0.4rem 1rem;
@@ -172,6 +171,12 @@ h1 {
 .item-detail .item-info a:hover {
   background-color: #333;
   color: white;
+}
+.item-detail .item-info .delete-btn {
+  background-color: red;
+}
+.item-detail .item-info .edit-btn {
+  background-color: rgb(7, 157, 250);
 }
 
 .form-div {

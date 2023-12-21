@@ -17,7 +17,12 @@
         <p><strong>Description: </strong><br>{{item.description}}</p>
         {% endif %}
 
-        <a href="#">Contact seller</a>
+        {% if request.user == item.created_by %}
+        <p><strong>This is your item!</strong></p>
+        <a href="{% url 'item:edit' item.id %}" class="edit-btn">Edit</a>
+        <a href="{% url 'item:delete' item.id %}" class="delete-btn">Delete</a>
+
+        {% endif %}
     </div>
 </div>
 
@@ -30,6 +35,7 @@
                 <div>
                     <h2>{{item.name}}</h2>
                     <p>Price: {{ item.price }} €</p>
+
                 </div>
             </a>
         </div>
