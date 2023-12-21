@@ -26,7 +26,11 @@
         <div class="item-card">
             <a href="#" class="category-card">
                 <h2>{{category.name}}</h2>
+                {% if category.items.count == 1%}
+                <p>{{category.items.count}} item</p>
+                {% else %}
                 <p>{{category.items.count}} items</p>
+                {% endif %}
             </a>
         </div>
         {% endfor %}

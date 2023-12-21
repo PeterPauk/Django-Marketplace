@@ -45,6 +45,9 @@ nav{
                     background-color: $light_blue;
                     color: white;
                 }
+                .dash-btn{
+                    width: 10rem;
+                }
 
             }
         }
@@ -84,10 +87,11 @@ h1{
     grid-template-columns: 1fr 1fr 1fr;
     background-color: $grey_bg;
     padding: 2rem;
-    margin: 0 1rem;
+    margin: 0 auto;
+    width: 93rem;
     border-radius: 15px;
     .item-card{
-        
+        margin-bottom: 2rem;
         display: flex;
         justify-content: center;
         div{

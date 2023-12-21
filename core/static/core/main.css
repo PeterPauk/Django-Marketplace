@@ -54,6 +54,9 @@ nav ul li a .login-btn {
   background-color: rgb(7, 157, 250);
   color: white;
 }
+nav ul li a .dash-btn {
+  width: 10rem;
+}
 
 footer {
   background-color: #333;
@@ -93,10 +96,12 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr;
   background-color: rgb(227, 230, 232);
   padding: 2rem;
-  margin: 0 1rem;
+  margin: 0 auto;
+  width: 93rem;
   border-radius: 15px;
 }
 .items .item-card {
+  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
 }
