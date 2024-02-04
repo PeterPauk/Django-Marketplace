@@ -14,10 +14,16 @@
 <nav>
     <h3><a href="{% url 'core:index'%}">MarketPlace</a></h3>
     <ul>
-        <li><a href="{% url 'item:new'%}">New Item</a></li>
         {% if request.user.is_authenticated %}
+        <li><a href="#">{{user.username}}</a></li>
+        <li><a href="{% url 'item:new'%}">New Item</a></li>
         <li><a href="{% url 'dashboard:index' %}"><button class="dash-btn">Dashboard</button></a></li>
-
+        <li><a href="{% url 'core:logout' %}"><button class="login-btn">Logout</button></a></li>
+        
+        {% else %}
+        <li><a href="{% url 'core:signup' %}"><button class="sign-btn">Sign Up</button></a></li>
+        <li><a href="{% url 'core:login' %}"><button class="login-btn">Login</button></a></li>
+        
         {% endif %}
     </ul>
 </nav>
